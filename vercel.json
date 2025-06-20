@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/app-ads.txt",
+      "destination": "/app-ads.txt",
+      "permanent": false
+    },
+    {
       "source": "/(.*)",
       "destination": "https://www.hushuapp.com/$1",
       "permanent": true
