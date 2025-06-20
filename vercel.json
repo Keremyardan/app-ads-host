@@ -1,14 +1,18 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/app-ads.txt",
-      "destination": "/app-ads.txt",
-      "permanent": false
+      "src": "/app-ads.txt",
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "dest": "/app-ads.txt"
     },
     {
-      "source": "/(.*)",
-      "destination": "https://www.hushuapp.com/$1",
-      "permanent": true
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.hushuapp.com/$1"
+      }
     }
   ]
 }
