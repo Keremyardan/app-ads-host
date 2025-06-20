@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.hushuapp.com/$1",
+      "permanent": true
+    }
+  ]
 }
