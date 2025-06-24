@@ -1,13 +1,6 @@
 {
   "routes": [
     {
-      "src": "/app-ads.txt",
-      "headers": {
-        "cache-control": "public, max-age=0, must-revalidate"
-      },
-      "dest": "/app-ads.txt"
-    },
-    {
       "src": "/(.*)",
       "status": 301,
       "headers": {
